@@ -1,1 +1,3 @@
-# python-reference
+# Python Reference
+
+## Repository Structure
