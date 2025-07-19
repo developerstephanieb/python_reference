@@ -54,11 +54,11 @@ python_reference/
 │   └── 05_binary_files.md
 ├── 08_standard_library/
 │   ├── 01_collections.md
-│   ├── itertools.md
-│   ├── functools.md
-│   ├── datetime.md
-│   ├── os_and_sys.md
-│   └── math_and_random.md
+│   ├── 02_itertools.md
+│   ├── 03_functools.md
+│   ├── 04_datetime.md
+│   ├── 05_os_and_sys.md
+│   └── 06_math_and_random.md
 ├── 09_concurrency/
 │   ├── 01_threading.md
 │   ├── 02_multiprocessing.md
