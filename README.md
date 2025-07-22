@@ -8,15 +8,16 @@ A structured collection of Python concepts, syntax, libraries, and best practice
 
 ```
 python_reference/
-├── 01_basics/
+├── 01_fundamentals/
 │   ├── 01_getting_started.md
-│   ├── 02_syntax_and_comments.md
-│   ├── 03_variables_and_scopes.md
-│   ├── 04_data_types.md
+│   ├── 02_variables.md
+│   ├── 03_data_types.md
+│   ├── 04_syntax_and_comments.md
 │   ├── 05_operators.md
 │   ├── 06_control_flow.md
 │   ├── 07_functions.md
-│   └── 08_io.md # basic_io.md
+│   ├── 08_scope.md
+│   └── 09_user_input.md
 ├── 02_data_structures/
 │   ├── 01_lists.md
 │   ├── 02_tuples.md
