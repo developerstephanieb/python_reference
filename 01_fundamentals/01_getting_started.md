@@ -36,13 +36,15 @@ Python can be installed from the official source or via a package manager.
 
 ### 2. Verify the Installation
 
-Confirm the installation was successful by running the following command::
+Confirm that the installation was successful by checking the installed Python version.
 
-```bash
-python3 --version
-```
+- Display the current version by running the following command:
 
-This should display the installed Python version, such as `Python 3.12.4`.
+   ```bash
+   python3 --version
+   ```
+
+- This should display the installed Python version, such as `Python 3.12.4`.
 
 ---
 
@@ -96,5 +98,5 @@ For larger programs, save your code in a file with a `.py` extension and run it 
    python3 hello.py
    ```
 
-   The program will execute and print `Hello, World!` to the terminal.
+- The program will execute and print `Hello, World!` to the terminal.
 
