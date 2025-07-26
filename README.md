@@ -16,13 +16,15 @@ python_reference/
 │   ├── 05_control_flow.md
 │   ├── 06_functions.md
 │   ├── 07_scope.md
-│   └── 08_user_input.md
+│   ├── 08_user_input.md
+│   ├── 09_importing_modules.md
+│   └── 10_handling_errors.md
 ├── 02_data_structures/
-│   ├── 01_lists.md
-│   ├── 02_tuples.md
-│   ├── 03_sets.md
-│   ├── 04_dictionaries.md
-│   ├── 05_strings.md
+│   ├── 01_strings.md
+│   ├── 02_lists.md
+│   ├── 03_tuples.md
+│   ├── 04_sets.md
+│   ├── 05_dictionaries.md
 │   ├── 06_mutability_and_copying.md
 │   └── 07_comprehensions.md
 ├── 03_oop/
@@ -37,14 +39,14 @@ python_reference/
 │   ├── 03_context_managers.md
 │   └── 05_functional_programming.md
 ├── 05_modules_and_packaging/
-│   ├── 01_modules_and_imports.md
+│   ├── 01_creating_modules.md
 │   ├── 02_packages.md
 │   ├── 03_virtual_environments.md
 │   ├── 04_pip_and_pypi.md
 │   └── 05_project_structure.md
 ├── 06_error_handling_and_debugging/
-│   ├── 01_handling_exceptions.md
-│   ├── 02_raising_and_custom_exceptions.md
+│   ├── 01_raising_exceptions.md
+│   ├── 02_custom_exceptions.md
 │   └── 03_debugging_and_logging.md
 ├── 07_file_handling/
 │   ├── 01_reading_and_writing_files.md

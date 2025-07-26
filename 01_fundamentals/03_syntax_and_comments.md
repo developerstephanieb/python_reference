@@ -1,20 +1,24 @@
 # 03: Syntax and Comments
 
-This guide covers syntax rules in Python, including  comments, statements, indentation, case sensitivity, and common syntax errors.
+This guide covers Python's syntax, including how to structure code and leave comments.
 
 ---
 
 ## Comments
 
-Comments are notes used to explain code and clarify logic. They are ignored by the Python interpreter.
+**Comments** are notes used to explain code and clarify logic. They are ignored by the Python interpreter.
 
-Use the hash symbol `#` to start a **single-line comment**.
+### Single-line comments
+
+To write a comment that fits on a single line, use the hash symbol (`#`).
 
 ```python
 GRAVITY = 9.81   # This is an single-line comment.
 ```
 
-Use triple quotes, either `"""` or `'''`, for comments that span **multiple lines**.
+### Multi-line comments
+
+For comments that span multiple lines, enclose the text in triple quotes, either `"""` or `'''`.
 
 ```python
 """
@@ -33,10 +37,11 @@ A **statement** is a single instruction that the Python interpreter can execute.
 
 ```python
 planet = "Mars"   # A single statement
+
 print(planet)     # Another statement
 ```
 
-If a statement is too long to fit on one line, it can be continued across multiple lines.
+Long statements can be split across multiple lines.
 
 ```python
 # This long list is a single statement split across multiple lines
@@ -52,26 +57,30 @@ moons = [
 
 Python uses **indentation** to define a **block of code**, which is a group of statements that are executed together.
 
-The standard convention is to use **four spaces** for each level of indentation.
+The standard is **four spaces** per indentation level.
 
 ```python
 is_ready = True
+
 if is_ready:
+    # This indented block runs only if is_ready is True.
     print("This line is inside the if block")
     print("This is also inside the if block")
 
+# This statement is not indented, so it always runs.
 print("This line is outside the if block.")
 ```
 
-**Note**: Mixing tabs and spaces can cause bugs. Configure the text editor to convert tabs to spaces to avoid issues.
+*Note*: Mixing tabs and spaces can cause bugs. Configure the text editor to convert tabs to spaces to avoid issues.
 
 ---
 
 ## Case Sensitivity
 
-Python is **case-sensitive**. This means that identifiers with different casing are treated as distinct and separate entities.
+Python is **case-sensitive**. This means that identifiers (like variable names) with different casing are treated as separate entities.
 
 ```python
+# These are three different variables.
 mission = "Apollo"
 Mission = "Gemini"
 MISSION = "Artemis"
@@ -89,7 +98,7 @@ A **syntax error** occurs when Python code violates the language’s structural 
 
 ### Missing Indentation (`IndentationError`)
   
-This happens when code blocks are not indented correctly.
+This happens when a line of code that requires indentation is missing it.
 
 ```python
 # This code will fail
@@ -102,7 +111,7 @@ print("The indentation is wrong!")
 
 ### Unexpected Indentation (`IndentationError`)
 
-The opposite error occurs when a line of code is indented without a valid reason.
+This happens when a line of code is indented without a valid reason.
 
 ```python
 # This code will fail
@@ -114,7 +123,7 @@ status = "Orbit achieved"
 
 ### Unterminated String (`SyntaxError`)
 
-This happens when you start a string with a quote but forget to add the closing quote.
+This happens when a string has a starting quote but not closing a one.
 
 ```python
 # This code will fail
@@ -122,4 +131,3 @@ print("Liftoff initiated
 ```
 
 **Error**: `SyntaxError: unterminated string literal`
-
