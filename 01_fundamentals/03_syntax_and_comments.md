@@ -13,12 +13,12 @@ This guide covers Python's syntax, including how to structure code and leave com
 To write a comment that fits on a single line, use the hash symbol (`#`).
 
 ```python
-GRAVITY = 9.81   # This is an single-line comment.
+planet = "Saturn" # This is an single-line comment.
 ```
 
 ### Multi-line comments
 
-For comments that span multiple lines, enclose the text in triple quotes, either `"""` or `'''`.
+For comments that span multiple lines, enclose the text in triple quotes (`"""` or `'''`).
 
 ```python
 """
@@ -26,7 +26,7 @@ This is a multi-line comment.
 It can span several lines and is useful for
 explaining complex logic.
 """
-velocity = 27500
+rings = 7
 ```
 
 ---
@@ -36,9 +36,8 @@ velocity = 27500
 A **statement** is a single instruction that the Python interpreter can execute. Typically, one statement is written per line.
 
 ```python
-planet = "Mars"   # A single statement
-
-print(planet)     # Another statement
+composition = "hydrogen"  # A single statement
+print(composition)        # Another statement
 ```
 
 Long statements can be split across multiple lines.
@@ -46,8 +45,8 @@ Long statements can be split across multiple lines.
 ```python
 # This long list is a single statement split across multiple lines
 moons = [
-    "Phobos", "Deimos", "Europa",
-    "Ganymede", "Titan", "Callisto",
+    "Titan", "Enceladus", "Mimas",
+    "Rhea", "Tethys", "Iapetus"
 ]
 ```
 
@@ -81,13 +80,12 @@ Python is **case-sensitive**. This means that identifiers (like variable names) 
 
 ```python
 # These are three different variables.
-mission = "Apollo"
-Mission = "Gemini"
-MISSION = "Artemis"
+mission = "Cassini"
+Mission = "Huygens"
+MISSION = "Pioneer"
 
-
-print(mission)   # Output: Apollo
-print(Mission)   # Output: Gemini
+print(mission) # Output: Cassini
+print(Mission) # Output: Huygens
 ```
 
 ---
@@ -98,7 +96,7 @@ A **syntax error** occurs when Python code violates the language’s structural 
 
 ### Missing Indentation (`IndentationError`)
   
-This happens when a line of code that requires indentation is missing it.
+This syntax error happens when a line of code that requires indentation is missing it.
 
 ```python
 # This code will fail
@@ -111,19 +109,19 @@ print("The indentation is wrong!")
 
 ### Unexpected Indentation (`IndentationError`)
 
-This happens when a line of code is indented without a valid reason.
+This syntax error happens when a line of code is indented without a valid reason.
 
 ```python
 # This code will fail
-status = "Orbit achieved"
-    print(status)
+day_length = 10.7
+    print(day_length)
 ```
 
 **Error**: `IndentationError: unexpected indent`
 
 ### Unterminated String (`SyntaxError`)
 
-This happens when a string has a starting quote but not closing a one.
+This syntax error happens when a string has a starting quote but not closing a one.
 
 ```python
 # This code will fail
@@ -131,3 +129,12 @@ print("Liftoff initiated
 ```
 
 **Error**: `SyntaxError: unterminated string literal`
+
+### Invalid Keyword (`SyntaxError`)
+
+This syntax error happens when a reserved word is used incorrectly.
+
+```python
+# This code will fail
+True = 1
+```

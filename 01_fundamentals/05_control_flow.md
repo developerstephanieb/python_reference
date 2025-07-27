@@ -1,10 +1,10 @@
-# 06: Control Flow
+# 05: Control Flow
 
 **Control flow statements** are programming constructs that manage the execution path of a program. They enable decision-making, looping, and branching, allowing the program to alter its normal top-to-bottom execution based on conditions or repeated operations.
 
 ---
 
-## The `if` Statement: Making Decision
+## The `if` Statement: Making Decisions
 
 The `if` statement runs a block of code only if a certain condition is `True`.
 
@@ -99,7 +99,7 @@ for planet in planets:
 
 To loop a specific number of times, use the built-in `range()` function, which returns a sequence of numbers.
 
-**Syntax**: `range(start, stop, step)`
+Syntax: `range(start, stop, step)`
 
 | Parameter | Required? | Description                                                        | Default |
 | :-------: | :-------: | ------------------------------------------------------------------ | :-----: |

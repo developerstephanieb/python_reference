@@ -82,9 +82,9 @@ For code that needs to be saved, use a script file.
 
 3. Navigate to the file's directory in the terminal:
   
-  ```bash
-  cd path/to/hello.py
-  ```
+   ```bash
+   cd path/to/hello.py
+   ```
 
 1. Run the script from the terminal using the `python3` command followed by the filename:
 

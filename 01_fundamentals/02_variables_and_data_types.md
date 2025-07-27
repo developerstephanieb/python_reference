@@ -30,13 +30,13 @@ population = "Eight billion"
 
 ---
 
-## Naming Variables and Constants
+## Naming Variables
 
 Python variables are named according to specific rules and conventions.
 
 ### Rules
 
-Variable names must follow a set of syntactic rules to be valid.
+In Python, **syntax** refers to the set of rules that define how code must be written. Variable names must follow these rules to be valid.
 
 - A variable name must start with a letter (`a-z`, `A-Z`) or an underscore (`_`).
 - Cannot start with a number.
@@ -61,15 +61,23 @@ GRAVITY = 9.81
 EARTH_RADIUS_KM = 6371
 ```
 
+### Keywords
+
+**Keywords** are reserved words that are part of Python’s syntax. They cannot be used as variable names.
+
+```python
+if, else, elif, while, for, def, return, class, import, True, False, None
+```
+
 ---
 
 ## Data Types
 
-Every value in Python has a **data type**.
+A **data type** is a classification that specifies which kind of value a variable can hold and what operations can be performed on that value.
 
 ### Strings (`str`)
 
-A **string** is a sequence of characters used to represent text. Create strings using single `'` or double `"` quotes.  It can contain one type of quotation mark when enclosed by the other. 
+A **string** is a sequence of characters used to represent text. Create strings using single (`'`) or double (`"`) quotes.  It can contain one type of quotation mark when enclosed by the other. 
 
 ```python
 country = "Brazil"
@@ -90,13 +98,13 @@ trees_in_amazon = 390_000_000_000
 A **float**, or floating-point number, is a number with a decimal component.
 
 ```python
-fuel_price = 12.95
-rocket_price = 67_275_150_901.78
+core_temperature = 5_700.5
+surface_water_coverage = 70.8 
 ```
 
 ### Booleans (`bool`)
 
-**Boolean** represent `True` or `False`.
+A **boolean** represents either `True` or `False`.
 
 ```python
 is_habitable = True
@@ -105,9 +113,31 @@ has_rings = False
 
 ---
 
-## Checking a Variable's Type with `type()`
+## Methods
 
-To determine the data type of a variable, use the built-in `type()` function. **Built-in functions** are tools provided as part of the language that can be used directly.
+A **method** is an action that Python can perform on a piece of data. It is called using **dot notation**, which means writing the variable’s name, followed by a dot (`.`), the method’s name, and parentheses `()`.
+
+### `.title()`
+
+The `.title()` method capitalizes the first letter of each word in a string.
+
+Syntax: `string.title()`
+
+```python
+landmark = "mount everest, nepal"
+
+print(landmark.title())
+```
+
+---
+
+## Built-in Functions
+
+A **built-in function** is a tool provided as part of the language that can be used directly. It is called by writing the function’s name, followed by parentheses `()` containing the data it should work on.
+
+### `type()`
+
+To determine the data type of a variable, use the built-in `type()` function. 
 
 Syntax: `type(object)`
 
@@ -127,7 +157,7 @@ An error that occurs while a program is running is called a **runtime error**. W
 
 ### `NameError`
 
-A runtime error that occurs when a variable is used before it has been defined, often due to a typo.
+This runtime error happens when a variable is used before it has been defined, often due to a typo.
 
 ```python
 message = "Welcome to Earth"

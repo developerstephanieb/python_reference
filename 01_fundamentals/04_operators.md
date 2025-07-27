@@ -1,4 +1,4 @@
-# 05: Operators
+# 04: Operators
 
 **Operators** are special symbols or keywords used to perform operations on values, such as math, comparisons, or logic.
 
