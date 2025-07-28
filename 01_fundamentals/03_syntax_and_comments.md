@@ -105,7 +105,7 @@ if is_ready:
 print("The indentation is wrong!")
 ```
 
-**Error**: `IndentationError: expected an indented block`
+Error: `IndentationError: expected an indented block`
 
 ### Unexpected Indentation (`IndentationError`)
 
@@ -117,18 +117,18 @@ day_length = 10.7
     print(day_length)
 ```
 
-**Error**: `IndentationError: unexpected indent`
+Error: `IndentationError: unexpected indent`
 
 ### Unterminated String (`SyntaxError`)
 
-This syntax error happens when a string has a starting quote but not closing a one.
+This syntax error happens when a string has a starting quote but not a closing one.
 
 ```python
 # This code will fail
 print("Liftoff initiated
 ```
 
-**Error**: `SyntaxError: unterminated string literal`
+Error: `SyntaxError: unterminated string literal`
 
 ### Invalid Keyword (`SyntaxError`)
 
@@ -138,3 +138,5 @@ This syntax error happens when a reserved word is used incorrectly.
 # This code will fail
 True = 1
 ```
+
+Error: `SyntaxError: cannot assign to True`

@@ -12,11 +12,11 @@ To write and run Python code, first install the Python **interpreter**, which is
 
 Python can be installed from the official source or via a package manager.
 
-**Official source (All Platforms)**  
+- **Official source (All Platforms)**  
  
    Download the latest version from the official website: [python.org/downloads](https://www.python.org/downloads/)
 
-**macOS (via [`Homebrew`](https://brew.sh))**  
+- **macOS (via [`Homebrew`](https://brew.sh))**  
 
   In a terminal, run:
 
@@ -24,7 +24,7 @@ Python can be installed from the official source or via a package manager.
    brew install python3
    ```
 
-**Linux (Debian/Ubuntu)**   
+- **Linux (Debian/Ubuntu)**   
 
   In a terminal, run:
 
@@ -66,7 +66,7 @@ The **REPL** (Read–Eval–Print Loop) is an tool for testing small code snippe
    >>> print("Hello, World!")
    ```
 
-The interpreter will print `Hello, World!` to the console. To exit, enter `exit()`.
+The interpreter will print `Hello, World!` to the terminal. To exit, enter `exit()`.
 
 ### Script File Execution
 
@@ -92,5 +92,5 @@ For code that needs to be saved, use a script file.
    python3 hello.py
    ```
 
-The program print `Hello, World!` to the terminal.
+The program will print `Hello, World!` to the terminal.
 

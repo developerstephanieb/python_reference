@@ -1,4 +1,4 @@
-# 09: User Input
+# 08: User Input
 
 This guide outlines how to prompt for and handle user input.
 
@@ -6,9 +6,9 @@ This guide outlines how to prompt for and handle user input.
 
 ## The `input()` Function
 
-The built-in `input()` function is the primary way to get user input. When called, it pauses the program and waits for the user to type some text and press the Enter key.
+The built-in `input()` function is the primary way to get user input. When called, it pauses the program and waits for the user to type text and press Enter.
 
-The text that the user types is then returned by the function as a string, which you can store in a variable.
+The entered text is returned as a string, which can be stored in a variable for later use.
 
 ```python
 # The program will pause here and wait for the user to type their name
@@ -22,7 +22,8 @@ print("Hello, " + name + "!")
 
 ## Providing a Prompt
 
-It's much more user-friendly to display a message, or prompt, that tells the user what to enter. To do this, pass a string to the `input()` function to display it as a prompt.
+For a better user experience, display a prompt message that tells the user what to enter. This can be done by passing a string to the `input()` function.
+
 
 ```python
 # The string passed to input() is displayed as a prompt
@@ -48,7 +49,7 @@ age_string = input("How old are you? ")
 age_in_ten_years = age_string + 10 
 ```
 
-**Error**: `TypeError: can only concatenate str (not "int") to str`
+Error: `TypeError: can only concatenate str (not "int") to str`
 
 ---
 
@@ -56,7 +57,7 @@ age_in_ten_years = age_string + 10
 
 To use the user's input as a number, it must first be converted from a string to the correct data type. This can be done using the built-in `int()` and `float()` functions.
 
-### `int()`
+### The `int()` Function
 
 To convert from a string to an integer, use the built-in `int()` function.
 
@@ -74,7 +75,7 @@ age_string = input("How old are you? ")
 # Convert the string to an integer
 age_integer = int(age_string)
 
-# Now you can perform math with it
+# Now perform math with it
 age_in_ten_years = age_integer + 10
 print("In ten years, you will be", age_in_ten_years, "years old.")
 ```
@@ -86,9 +87,9 @@ It is common to combine these steps into a single line:
 age = int(input("How old are you? "))
 ```
 
-### `float()`
+### The `float()` Function
 
-to convert a string to an floating-point number, use the built-in `float()` function.
+To convert a string to an floating-point number, use the built-in `float()` function.
 
 Syntax: `float(value)`
 

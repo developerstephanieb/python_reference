@@ -1,14 +1,12 @@
 # 10: Handling Errors
 
-Programs crash and displays a traceback when it encounters a runtime error, such as a `NameError`. While tracebacks are great for developers, they are confusing for users.
-
-A robust program should be able to anticipate and handle common errors gracefully without crashing. In Python, we do this using a `try...except` block.
+A `try...except` block allows a program to anticipate and handle common errors gracefully without crashing.
 
 ---
 
 ## The `try...except` Block
 
-The `try...except` block allows you to "try" to run a piece of code that might cause an error. If an error occurs, the code inside the `except` block is executed, and the program continues instead of crashing.
+The `try...except` block attempts to run a piece of code that might cause an error. If an error occurs, the code inside the `except` block is executed, and the program continues instead of crashing.
 
 ```python
 try:
@@ -22,14 +20,6 @@ except ErrorType:
 A common example is handling a `ValueError` when converting user input to a number. 
 
 ```python
-# This program will crash if the user enters text like "ten"
-age = int(input("Enter your age: "))
-print("Your age is", age)
-```
-
-Now let's wrap it in a `try...except` block to handle the error gracefully.
-
-```python
 try:
     # Try to get and convert the user's input
     age = int(input("Enter your age: "))
@@ -41,6 +31,22 @@ except ValueError:
 
 print("The program continues without crashing.")
 ```
+
+---
+
+## Common Exceptions
+
+The table below lists common exceptions and when they typically occur.
+
+| Exception           | Common Cause                                                                                        |
+| ------------------- | --------------------------------------------------------------------------------------------------- |
+| `SyntaxError`       | Breaking Python's grammar rules.                                                                    |
+| `IndentationError`  | A subclass of SyntaxError. Occurs when indentation is incorrect.                                    |
+| `NameError`         | Using a variable or function name that has not been defined yet.                                    |
+| `TypeError`         | Performing an operation on an inappropriate data type.                                              |
+| `ValueError`        | An operation receives an argument of the correct type, but an inappropriate value (e.g., "hi" + 5). |
+| `ZeroDivisionError` | Attempting to divide a number by zero.                                                              |
+| `IndexError`        | Trying to access an item in a sequence with an index that is out of range.                          |
 
 ---
 
@@ -68,7 +74,7 @@ except ZeroDivisionError:
 
 ## The `else` Block
 
-Sometimes you have code that should only run if the `try` block was successful (i.e., no errors occurred). This code can be placed in an `else` block.
+Sometimes code should only run if the `try` block was successful (i.e., no errors occurred). This code can be placed in an `else` block.
 
 ```python
 try:
@@ -90,7 +96,7 @@ else:
 
 ## The `finally` Block
 
-There may be some code that you want to run no matter what, whether an error occurred or not. The `finally` block is always executed.
+There may be code that should run no matter what, whether an error occurred or not. The `finally` block is always executed.
 
 ```python
 try:

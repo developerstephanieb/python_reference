@@ -1,6 +1,6 @@
 # 05: Control Flow
 
-**Control flow statements** are programming constructs that manage the execution path of a program. They enable decision-making, looping, and branching, allowing the program to alter its normal top-to-bottom execution based on conditions or repeated operations.
+**Control flow statements** are programming constructs that determine the order in which code is executed. They enable decision-making, looping, and branching, allowing a program to change its normal top-to-bottom flow based on conditions or repeated actions.
 
 ---
 
@@ -83,7 +83,7 @@ print("Liftoff!")
 
 ### The `for` Loop
 
-A `for` loop iterates over a sequence, such as a list of items or a string.
+A `for` loop iterates over a sequence, such as a string or a list of items.
 
 ```python
 # List of planets
@@ -135,7 +135,7 @@ The `break` and `continue` statements allow finer control over loop execution.
 
 - **The `continue` Statement**
   
-   The `continue` statements ends the current iteration and jumps to the next one. This is useful for skipping certain items without breaking the entire loop.
+   The `continue` statement ends the current iteration and jumps to the next one. This is useful for skipping certain items without breaking the entire loop.
 
    ```python
     # Print only the even numbers from 0 to 9

@@ -14,7 +14,7 @@ def greet():
     print("Welcome to the world of functions.")
 ```
 
-The code inside the function does not run until it is called. A **function call** is the expression that triggers the execution of a function by using its name followed by parentheses.
+The code inside the function does not run until it is called. A **function call** is the expression that triggers the execution of a function by using its name followed by parentheses `()`.
 
 ```python
 greet() # Output: Welcome to the world of functions.
@@ -26,14 +26,17 @@ greet() # Output: Welcome to the world of functions.
 
 A **parameter** is a variable listed inside a function's parentheses that acts as a placeholder for input values. The value provided when the function is called is known as an **argument**.
 
-```python
-# 'destination' is a parameter of this function
-def navigate_to(destination):
-    print("Navigating to", destination)
+### Positional Arguments
 
-# "Mars" and "Venus" are arguments
-navigate_to("Mars")
-navigate_to("Venus")
+A **positional argument** is an argument that is passed to a function in the correct positional order. The values are assigned to the function’s parameters based on their position in the function call.
+
+```python
+# 'system' and 'status' are parameters of this function
+def report_status(system, status):
+    print(system + " system is currently " + status + ".")
+
+# 'Navigation' and ''Online are positional arguments
+report_status("Navigation", "Online")
 ```
 
 ### Default Parameter
@@ -72,7 +75,7 @@ print("The square of 10 is:", square(10))
 
 ## Documenting Your Functions: Docstrings
 
-A **docstring** is a multi-line comment, enclosed in triple quotes (`"""..."""`), that is placed as the very first line inside a function definition to explain the function's purpose.
+A **docstring** is a multi-line comment, enclosed in triple quotes (`"""`), placed at the beginning of a function definition to explain the its purpose.
 
 ```python
 def function_name(param1, param2):
@@ -95,9 +98,9 @@ def function_name(param1, param2):
     # function logic here
 ```
 
-### `help()`
+### The `help()` Function
 
-You can access a function's docstring using the built-in `help()` function.
+To access a function's docstring, use the built-in `help()` function.
 
 Syntax: `help(object)`
 
@@ -127,7 +130,7 @@ help()                # Enter interactive help (type 'quit' to exit)
 
 ## The `pass` Statement: A Placeholder
 
-The `pass` statement is a placeholder that does nothing. It allows you to create an empty function without causing an `IndentationError`.
+The `pass` statement is a placeholder that does nothing. It is used to define an empty function without causing an `IndentationError`.
 
 ```python
 def check_fuel():

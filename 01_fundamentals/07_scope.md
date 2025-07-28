@@ -71,7 +71,7 @@ print_player_name() # Output: The player's name is Alex
 
 ## Built-in Scope
 
-The **built-in scope** contains all of Python’s predefined names, such as functions such as `print()` and `type()`. These are accessible throughout the program.
+The **built-in scope** contains all of Python’s predefined names, including functions like `print()` and `type()`. These are accessible throughout the program.
 
 ```python
 # 'type' is a built-in function, so it's always available
@@ -104,7 +104,7 @@ print(f"Score outside function: {score}") # Output: Score outside function: 110
 
 ### The `nonlocal` Keyword
 
-The `nonlocal` keyword allows you to modify a variable in the enclosing scope from an inner function.
+To modify a variable in the enclosing scope from an inner function, use the `nonlocal` keyword.
 
 ```python
 def game():
@@ -122,11 +122,11 @@ game() # Output: Current level: Hard
 
 ### Scope and Mutable Objects
 
-To modify the contents of a mutable object (like a list or dictionary) inside a function, you do not need to use `global` or `nonlocal`.
+To modify the contents of a mutable object (such as a list) inside a function, `global` and `nonlocal` are not required.
 
-These keywords are only necessary when you want to **reassign** the entire variable to a new object from within the function.
+These keywords are only necessary when reassigning the entire variable to a new object within the function.
 
-- **Modifying** a global list (OK without `global`):
+- Modifying a global list (OK without `global`):
 
     ```python
     items = ["sword"] # Global list
@@ -139,7 +139,7 @@ These keywords are only necessary when you want to **reassign** the entire varia
     print(items) # Output: ['sword', 'shield']
     ```
 
-- **Reassigning** a global list (Needs `global`):
+- Reassigning a global list (Needs `global`):
 
     ```python
     items = ["paper", "pen"] # Global list

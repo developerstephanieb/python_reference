@@ -77,7 +77,7 @@ A **data type** is a classification that specifies which kind of value a variabl
 
 ### Strings (`str`)
 
-A **string** is a sequence of characters used to represent text. Create strings using single (`'`) or double (`"`) quotes.  It can contain one type of quotation mark when enclosed by the other. 
+A **string** is a sequence of characters used to represent text. Create strings using single (`'`) or double (`"`) quotes.  A string can contain one type of quotation mark when enclosed by the other. 
 
 ```python
 country = "Brazil"
@@ -117,7 +117,7 @@ has_rings = False
 
 A **method** is an action that Python can perform on a piece of data. It is called using **dot notation**, which means writing the variable’s name, followed by a dot (`.`), the method’s name, and parentheses `()`.
 
-### `.title()`
+### The `.title()` Method
 
 The `.title()` method capitalizes the first letter of each word in a string.
 
@@ -129,13 +129,15 @@ landmark = "mount everest, nepal"
 print(landmark.title())
 ```
 
+The program will print `Mount Everest, Nepal` to the terminal.
+
 ---
 
 ## Built-in Functions
 
 A **built-in function** is a tool provided as part of the language that can be used directly. It is called by writing the function’s name, followed by parentheses `()` containing the data it should work on.
 
-### `type()`
+### The `type()` Function
 
 To determine the data type of a variable, use the built-in `type()` function. 
 
@@ -143,11 +145,11 @@ Syntax: `type(object)`
 
 ```python
 spacecraft = "Voyager 1"
-launch_year = 1977
 
 print(type(spacecraft))
-print(type(launch_year))
 ```
+
+The program will print `<class 'str'>` to the terminal.
 
 ---
 
@@ -164,7 +166,7 @@ message = "Welcome to Earth"
 print(mesage)
 ```
 
-Because `message` was misspelled as `mesage`, Python doesn't recognize the variable. 
+Because `message` was misspelled as `mesage`, Python doesn't recognize the variable and raises an error. 
 
 ```bash
 Traceback (most recent call last):

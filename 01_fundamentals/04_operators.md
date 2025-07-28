@@ -18,6 +18,8 @@ Arithmetic operators are used to perform mathematical calculations with numbers.
 |   `%`    | Modulus        | `5 % 3`  |    `2`     |
 |   `**`   | Exponentiation | `5 ** 3` |   `125`    |
 
+*Note*: Division (`/`) always results in a float, even if the numbers divide evenly. In other operations, mixing an integer with a float also produces a float.
+
 ---
 
 ## String Concatenation
@@ -44,7 +46,7 @@ launch_year = 1969
 message = "Launch year: " + launch_year
 ```
 
-**Error**: `TypeError: can only concatenate str (not "int") to str`
+Error: `TypeError: can only concatenate str (not "int") to str`
 
 ---
 
@@ -116,10 +118,10 @@ Membership operators test whether a value exists within a sequence.
 Bitwise operators perform operations on the binary representations of integers.
 
 | Operator | Name                | Example  | Result |
-| :------: | ------------------- | :------: | ------ |
-|   `&`    | Bitwise AND         | `5 & 3`  | `1`    |
-|   `\|`   | Bitwise OR          | `5 \| 3` | `7`    |
-|   `~`    | Bitwise NOT         |   `~5`   | `-6`   |
-|   `^`    | Bitwise XOR         | `5 ^ 3`  | `6`    |
-|   `>>`   | Bitwise right shift | `5 >> 1` | `2`    |
-|   `<<`   | Bitwise left shift  | `5 << 1` | `10`   |
+| :------: | ------------------- | :------: | :----: |
+|   `&`    | Bitwise AND         | `5 & 3`  |  `1`   |
+|   `\|`   | Bitwise OR          | `5 \| 3` |  `7`   |
+|   `~`    | Bitwise NOT         |   `~5`   |  `-6`  |
+|   `^`    | Bitwise XOR         | `5 ^ 3`  |  `6`   |
+|   `>>`   | Bitwise right shift | `5 >> 1` |  `2`   |
+|   `<<`   | Bitwise left shift  | `5 << 1` |  `10`  |
